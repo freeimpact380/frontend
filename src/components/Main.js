@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <Container>
       <h1>
-        Your Education Can Make a Difference!!!!!!!!!
+        Your Education Can Make a Difference!
       </h1>
     </Container>
   );
