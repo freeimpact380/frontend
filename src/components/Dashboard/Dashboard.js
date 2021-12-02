@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Trivia from "./Trivia/Trivia";
+import "./Dashboard.css";
 
 // import "../scss/Styles.scss";
 
