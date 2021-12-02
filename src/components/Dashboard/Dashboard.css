@@ -10,6 +10,10 @@ body {
     animation: gradient 15s ease infinite;
 }
 
+* {
+    font-family: "Rubik", sans-serif;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -20,4 +24,109 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.trivia-container-ads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.trivia-container-ads-inner {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.charities-leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.charities-leaderboard-inner {
+    width: 80vw;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background: linear-gradient(45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+    background-size: 400% 400%;
+    animation: gradient 50s ease infinite;
+    color: #eef4f9;
+}
+
+.charities-leaderboard-header {
+    font-size: calc(1rem + 1vw);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.charities-leaderboard-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.charities-leaderboard-body-top3 {
+    display: flex;
+}
+
+.charities-leaderboard-top3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.charities-leaderboard-top3:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.charities-leaderboard-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.charities-leaderboard-row:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.charities-leaderboard-row-name {
+    font-size: calc(0.8rem + 0.1vw);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.charities-leaderboard-row-points {
+    font-size: calc(0.6rem + 0.1vw);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    background: #4c4eb3;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+.charities-ranking-top3 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 1.5rem;
 }

@@ -77,13 +77,6 @@ function Trivia({ username, setGlobalState, startingPoints, charities }) {
         return array;
     }
 
-    let mockAdsLink = [
-        "https://i.imgur.com/WmKXawZ.png",
-        "https://i.imgur.com/FP66qBs.png",
-        "https://i.imgur.com/EH6SaYs.png",
-        "https://i.imgur.com/4JTBeIN.png",
-    ];
-
     return (
         <>
             {question.question ? (
@@ -149,18 +142,6 @@ function Trivia({ username, setGlobalState, startingPoints, charities }) {
                             </div>
                         )}
                     </div>
-                </div>
-            </div>
-            <div className="trivia-container-ads">
-                <div
-                    className="trivia-container-ads-inner"
-                    // style={{ backgroundImage: `url(${mockAdsLink[Math.floor(Math.random() * mockAdsLink.length)]})` }}
-                >
-                    <img
-                        src={mockAdsLink[Math.floor(Math.random() * mockAdsLink.length)]}
-                        alt="ad"
-                        style={{ width: "89vw", height: "auto", maxWidth: "40rem" }}
-                    />
                 </div>
             </div>
         </>
