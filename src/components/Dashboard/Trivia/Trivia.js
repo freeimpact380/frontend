@@ -156,7 +156,11 @@ function Trivia({ username, setGlobalState, startingPoints, charities }) {
                     className="trivia-container-ads-inner"
                     // style={{ backgroundImage: `url(${mockAdsLink[Math.floor(Math.random() * mockAdsLink.length)]})` }}
                 >
-                    <img src={mockAdsLink[Math.floor(Math.random() * mockAdsLink.length)]} alt="ad" style={{ width: "89vw", height: "auto" }} />
+                    <img
+                        src={mockAdsLink[Math.floor(Math.random() * mockAdsLink.length)]}
+                        alt="ad"
+                        style={{ width: "89vw", height: "auto", maxWidth: "40rem" }}
+                    />
                 </div>
             </div>
         </>
