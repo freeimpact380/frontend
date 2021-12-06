@@ -166,3 +166,26 @@
         background-position: 0 0;
     }
 }
+
+.trivia-category {
+    align-self: end;
+    padding-left: 0.5rem;
+}
+
+.trivia-category-dropdown {
+    width: calc(11rem + 5vw);
+}
+
+.trivia-top-bar {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    padding-bottom: 0.8rem;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -113,7 +113,7 @@ const Container = styled.div`
     min-width: 450px;
     backdrop-filter: blur(35px);
     background-color: rgba(253, 187, 176, 1);
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

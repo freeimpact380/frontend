@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import classNames from "classnames";
 import Trivia from "./Trivia/Trivia";
 import "./Dashboard.css";
 
@@ -27,6 +26,7 @@ function DashboardPage() {
             .then((json) => {
                 setUserData(json.user || {});
                 setDataRecieved(1);
+                setGlobalState(0);
             })
             .catch((error) => {
                 console.error("Failed to get user data");
@@ -58,7 +58,7 @@ function DashboardPage() {
             .catch((error) => {
                 console.error("Failed to get charities:", error);
             });
-    }, []);
+    }, [globalState]);
 
     let mockAdsLink = [
         "https://i.imgur.com/0wy0klx.png",
@@ -94,7 +94,7 @@ function DashboardPage() {
                                                     }}
                                                 />
                                                 <div
-                                                    class="charities-ranking-top3"
+                                                    className="charities-ranking-top3"
                                                     style={{ backgroundColor: i === 0 ? "#57c795" : i === 1 ? "#867df9" : "#db386c" }}
                                                 >
                                                     {i + 1}
