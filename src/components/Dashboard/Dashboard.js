@@ -40,6 +40,7 @@ function DashboardPage() {
             headers: {
                 "Content-Type": "application/json",
             },
+            credentials: "include",
         })
             .then((res) => {
                 if (res.status === 200) return res;
